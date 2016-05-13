@@ -1,0 +1,14 @@
+version: '2'
+services:
+  haste-server:
+    build: .
+    depends_on:
+      - redis
+  redis:
+    image: redis
+    #volumes:
+    #- ./:/haste
+#haste-server:
+    # command: 
+    # volumes:
+      #- ./:/root/
